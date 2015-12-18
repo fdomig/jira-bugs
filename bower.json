@@ -1,0 +1,10 @@
+{
+  "name": "jira-bugs",
+  "dependencies": {
+    "angular": "~1.4.8",
+    "d3": "~3.5.9",
+    "nvd3": "~1.8.1",
+    "angular-nvd3": "~1.0.3",
+    "lodash": "~3.10.1"
+  }
+}

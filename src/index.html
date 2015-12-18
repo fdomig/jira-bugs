@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="jiraBugsApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Jira Bugs</title>
+
+  <link rel="stylesheet" href="bower_components/nvd3/build/nv.d3.css">
+
+</head>
+<body>
+
+<div ng-controller="JiraBugsChartController as ctrl">
+
+  <nvd3 options="ctrl.options" data="ctrl.data"></nvd3>
+
+</div>
+
+
+<!--dependencies-->
+<script src="bower_components/lodash/lodash.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/d3/d3.js"></script>
+<script src="bower_components/nvd3/build/nv.d3.js"></script>
+<script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+
+<!--application-->
+<script src="app/app.js"></script>
+<script src="components/jira-data-service.js"></script>
+<script src="components/transform-data-service.js"></script>
+<script src="components/mock-data-service.js"></script>
+
+</body>
+</html>
